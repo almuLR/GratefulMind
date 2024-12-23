@@ -6,4 +6,7 @@
     <string name="todo3">TODO</string>
     <string name="todo4">TODO</string>
     <string name="todo5">TODO</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="agradecer">Agradecer</string>
+    <string name="mis_agradecimientos">Mis agradecimientos</string>
 </resources>
