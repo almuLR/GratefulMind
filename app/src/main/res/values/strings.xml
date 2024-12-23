@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GratefulMind</string>
+    <string name="grateful_mind">Grateful Mind</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
 </resources>
