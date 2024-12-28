@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#00FFFFFF"
     android:backgroundTint="#00FFFFFF"
-    android:foregroundTint="#00FFFFFF">
+    android:foregroundTint="@color/white">
 
     <TextView
         android:id="@+id/textView17"
