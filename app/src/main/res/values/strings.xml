@@ -8,5 +8,15 @@
     <string name="todo5">TODO</string>
     <string name="ayuda">Ayuda</string>
     <string name="agradecer">Agradecer</string>
+    <string name="bien">Bien</string>
+    <string name="muyBien">Muy bien</string>
+    <string name="regular">Regular</string>
+    <string name="mal">Mal</string>
+    <string name="fecha">Fecha:</string>
+    <string name="cosas">3 cosas de las que estoy agradecido:</string>
+    <string name="aprendido">He aprendido:</string>
+    <string name="siento">Me siento:</string>
+    <string name="porque">¿Porque me siento así?</string>
+
     <string name="mis_agradecimientos">Mis agradecimientos</string>
 </resources>

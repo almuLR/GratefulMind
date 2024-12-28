@@ -2,7 +2,6 @@ package com.example.gratefulmind;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -22,23 +21,17 @@ public class MainActivity extends AppCompatActivity {
 
         //Implementamos el botón que nos lleve a escribir el agradecimiento
         Button gratitudeButton = findViewById(R.id.gratitudebutton);
-        gratitudeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent next = new Intent(MainActivity.this, GratitudeActivity.class);
-                startActivity(next);
-            }
+        gratitudeButton.setOnClickListener(v -> {
+            Intent next = new Intent(MainActivity.this, GratitudeActivity.class);
+            startActivity(next);
         });
 
 
         //Implementamos el botón que nos lleve a ver todos nuestros agradecimientos
         Button thanksButton = findViewById(R.id.thanksbutton);
-        thanksButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent next = new Intent(MainActivity.this, ThanksActivity.class);
-                startActivity(next);
-            }
+        thanksButton.setOnClickListener(v -> {
+            Intent next = new Intent(MainActivity.this, ThanksActivity.class);
+            startActivity(next);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
