@@ -85,7 +85,8 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintVertical_bias="0.015"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
@@ -95,6 +96,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,11 +111,13 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintVertical_bias="0.027"
+        tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine3"
@@ -123,11 +127,13 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintVertical_bias="0.034"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView4"
@@ -152,6 +158,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
@@ -182,6 +189,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.034"
@@ -189,6 +197,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <RadioGroup
+        android:id="@+id/radiogorup"
         android:layout_width="237dp"
         android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -201,45 +210,42 @@
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="48dp"
             android:text="@string/muyBien" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
-            android:layout_height="37dp"
+            android:layout_height="48dp"
             android:text="@string/bien" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
+            android:layout_height="48dp"
             android:text="@string/regular" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:text="@string/mal" />
+            android:layout_height="48dp"
+            android:text="@string/mal"
+            tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
 
     </RadioGroup>
 
     <ImageButton
-        android:id="@+id/imageButton"
-        style="@android:style/Widget.ImageButton"
-        android:layout_width="87dp"
-        android:layout_height="75dp"
+        android:id="@+id/savebutton"
+        android:layout_width="92dp"
+        android:layout_height="76dp"
         android:backgroundTint="#00FFFFFF"
-        android:foregroundTint="#00FFFFFF"
-        android:scaleType="centerInside"
-        android:tint="#03FFFFFF"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine5"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.983"
-        app:srcCompat="@drawable/_459958"
-        tools:srcCompat="@drawable/_459958" />
+        app:layout_constraintVertical_bias="0.964"
+        app:srcCompat="@drawable/_459958" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
