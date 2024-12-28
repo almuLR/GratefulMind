@@ -27,10 +27,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // Método para obtener todos los agradecimientos guardados
     public Cursor getGratitudeByDate(String date) {
         SQLiteDatabase db = getReadableDatabase();
-        return db.rawQuery("SELECT gratitude1, gratitude2, gratitude3, lesson, feeling, reason FROM thanks ORDER BY date ASC", null);
+        return db.rawQuery("SELECT date, gratitude1, gratitude2, gratitude3, lesson, feeling, reason FROM thanks WHERE date = ?", new String[]{date});
+    }
+
+    public Cursor getGratitudesByDate() {
+        SQLiteDatabase db = getReadableDatabase();
+        return db.rawQuery("SELECT date FROM thanks ORDER BY date ASC", null);
     }
 
     // Método para agregar un agradecimiento a la bbdd

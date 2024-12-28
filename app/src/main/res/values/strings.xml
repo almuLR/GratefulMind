@@ -21,4 +21,16 @@
     <string name="mis_agradecimientos">Mis agradecimientos</string>
     <string name="todo1">TODO</string>
     <string name="todo6">TODO</string>
+    <string name="volver">Volver</string>
+    <string name="todo7">TODO</string>
+    <string name="_1">1.</string>
+    <string name="_2">2.</string>
+    <string name="_3">3.</string>
+    <string name="fecha2">Fecha:</string>
+    <string name="agradecimiento_1">Agradecimiento 1:</string>
+    <string name="agradecimiento_2">Agradecimiento 2:</string>
+    <string name="agradecimiento_3">Agradecimiento 3:</string>
+    <string name="lecci_n">Lección:</string>
+    <string name="c_mo_te_sientes">Cómo te sientes:</string>
+    <string name="por_qu">Por qué:</string>
 </resources>

@@ -32,14 +32,59 @@
         android:layout_height="wrap_content"
         android:labelFor="@id/editTextDate"
         android:text="@string/fecha"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.025" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/editTextDate"
+        android:text="@string/_1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/editTextDate"
+        android:text="@string/_2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/editTextDate"
+        android:text="@string/_3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine3"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.075" />
 
     <TextView
         android:id="@+id/textView2"
@@ -47,14 +92,14 @@
         android:layout_height="wrap_content"
         android:labelFor="@id/editTextDate"
         android:text="@string/siento"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintVertical_bias="0.521" />
 
     <EditText
         android:id="@+id/editTextDate"
@@ -63,7 +108,7 @@
         android:autofillHints="Fecha"
         android:ems="10"
         android:inputType="date"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.116"
@@ -73,19 +118,18 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="280dp"
-        android:layout_height="61dp"
+        android:layout_width="355dp"
+        android:layout_height="34dp"
         android:labelFor="@id/editTextTextMultiLine"
         android:text="@string/cosas"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate"
-        app:layout_constraintVertical_bias="0.015"
+        app:layout_constraintVertical_bias="0.02"
         tools:ignore="TextSizeCheck" />
 
     <EditText
@@ -97,6 +141,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,6 +157,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,6 +174,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -141,14 +188,14 @@
         android:layout_height="wrap_content"
         android:labelFor="@id/editTextTextMultiLine4"
         android:text="@string/aprendido"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.448" />
+        app:layout_constraintVertical_bias="0.404" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine4"
@@ -159,6 +206,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
@@ -172,14 +220,14 @@
         android:layout_height="wrap_content"
         android:labelFor="@id/editTextTextMultiLine5"
         android:text="@string/porque"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintVertical_bias="0.884" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine5"
@@ -190,19 +238,21 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.384" />
 
     <RadioGroup
         android:id="@+id/radiogorup"
-        android:layout_width="237dp"
-        android:layout_height="150dp"
+        android:layout_width="236dp"
+        android:layout_height="194dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintVertical_bias="0.0">
@@ -236,16 +286,32 @@
 
     <ImageButton
         android:id="@+id/savebutton"
-        android:layout_width="92dp"
-        android:layout_height="76dp"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
         android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/todo7"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.964"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/_459958" />
+
+    <ImageButton
+        android:id="@+id/volverbutton2"
+        android:layout_width="83dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/volver"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/_575145" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

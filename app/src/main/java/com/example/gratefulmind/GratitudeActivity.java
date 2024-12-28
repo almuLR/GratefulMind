@@ -1,5 +1,6 @@
 package com.example.gratefulmind;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,7 +28,7 @@ public class GratitudeActivity extends AppCompatActivity {
 
         dbHelper = new DataBaseHelper(this);
 
-        //Buscamos campos de texto para guardarnos
+        // Referencias a los campos de texto
         EditText dateField = findViewById(R.id.editTextDate);
         EditText gratitudeField1 = findViewById(R.id.editTextTextMultiLine);
         EditText gratitudeField2 = findViewById(R.id.editTextTextMultiLine2);
@@ -36,45 +37,56 @@ public class GratitudeActivity extends AppCompatActivity {
         EditText reasonField = findViewById(R.id.editTextTextMultiLine5);
         RadioGroup feelingGroup = findViewById(R.id.radiogorup);
 
-        //Programamos el guardado de datos presionando botón +
+        // Botón para guardar
         ImageButton saveButton = findViewById(R.id.savebutton);
-        saveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String date = dateField.getText().toString().trim();
-                String gratitude1 = gratitudeField1.toString().trim();
-                String gratitude2 = gratitudeField2.toString().trim();
-                String gratitude3 = gratitudeField3.toString().trim();
-                String lesson = lessonField.toString().trim();
-                String reason = reasonField.toString().trim();
+        saveButton.setOnClickListener(v -> {
+            String date = dateField.getText().toString().trim();
+            String gratitude1 = gratitudeField1.getText().toString().trim();
+            String gratitude2 = gratitudeField2.getText().toString().trim();
+            String gratitude3 = gratitudeField3.getText().toString().trim();
+            String lesson = lessonField.getText().toString().trim();
+            String reason = reasonField.getText().toString().trim();
 
-                int selectedFeelingId = feelingGroup.getCheckedRadioButtonId();
-                String feeling = null;
+            int selectedFeelingId = feelingGroup.getCheckedRadioButtonId();
+            String feeling = null;
 
-                if (selectedFeelingId != -1){
-                    RadioButton selectedFeeling = findViewById(selectedFeelingId);
-                    feeling = selectedFeeling.getText().toString();
-                }
-
-                if (date.isEmpty() || gratitude1.isEmpty() || gratitude2.isEmpty() || gratitude3.isEmpty() || lesson.isEmpty() || feeling == null || reason.isEmpty()){
-                    Toast.makeText(GratitudeActivity.this, "Por favor completa todos los campos.", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                dbHelper.addGratitude(date, gratitude1, gratitude2, gratitude3, lesson, feeling, reason);
-                Toast.makeText(GratitudeActivity.this, "¡Agradecimiento registrado exitosamente!", Toast.LENGTH_SHORT).show();
-
-                dateField.setText("");
-                gratitudeField1.setText("");
-                gratitudeField2.setText("");
-                gratitudeField3.setText("");
-                lessonField.setText("");
-                reasonField.setText("");
-                feelingGroup.clearCheck();
-
+            if (selectedFeelingId != -1) {
+                RadioButton selectedFeeling = findViewById(selectedFeelingId);
+                feeling = selectedFeeling.getText().toString();
             }
+
+            // Validar datos
+            if (date.isEmpty() || gratitude1.isEmpty() || gratitude2.isEmpty() || gratitude3.isEmpty() || lesson.isEmpty() || feeling == null || reason.isEmpty()) {
+                Toast.makeText(GratitudeActivity.this, "Por favor completa todos los campos.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            // Guardar en la base de datos
+            dbHelper.addGratitude(date, gratitude1, gratitude2, gratitude3, lesson, feeling, reason);
+            Toast.makeText(GratitudeActivity.this, "¡Agradecimiento registrado exitosamente!", Toast.LENGTH_SHORT).show();
+
+            // Limpiar los campos
+            dateField.setText("");
+            gratitudeField1.setText("");
+            gratitudeField2.setText("");
+            gratitudeField3.setText("");
+            lessonField.setText("");
+            reasonField.setText("");
+            feelingGroup.clearCheck();
+
+            // Volver al MainActivity
+            Intent next = new Intent(GratitudeActivity.this, MainActivity.class);
+            startActivity(next);
         });
 
+        // Botón para volver
+        ImageButton backButton = findViewById(R.id.volverbutton2);
+        backButton.setOnClickListener(v -> {
+            Intent next = new Intent(GratitudeActivity.this, MainActivity.class);
+            startActivity(next);
+        });
+
+        // Ajustar los márgenes para la ventana
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

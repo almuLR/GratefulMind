@@ -7,4 +7,52 @@
     android:layout_height="match_parent"
     tools:context=".ThanksActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2196F3"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:logo="@mipmap/ic_launcher_foreground"
+        app:title="Grateful Mind"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="@color/black"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_ranking_title"
+            android:layout_width="43dp"
+            android:layout_height="21dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <ListView
+            android:id="@+id/lv_thanks"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="10dp" />
+
+        <ImageButton
+            android:id="@+id/volverbutton"
+            android:layout_width="100dp"
+            android:layout_height="67dp"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/volver"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/_575145" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

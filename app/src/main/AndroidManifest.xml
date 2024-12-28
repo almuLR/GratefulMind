@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GratefulMind"
         tools:targetApi="31">
         <activity
+            android:name=".GratitudeDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ThanksActivity"
             android:exported="false" />
         <activity
