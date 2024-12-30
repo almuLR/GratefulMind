@@ -9,6 +9,7 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -25,7 +26,20 @@
         app:titleTextColor="@color/black"
         tools:ignore="TextSizeCheck" />
 
+    <!-- Lottie Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_rawRes="@raw/gratitude_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 
+    <!-- Help Button -->
     <Button
         android:id="@+id/helpbutton"
         android:layout_width="wrap_content"
@@ -35,36 +49,36 @@
         android:text="@string/ayuda"
         android:textColor="#070707"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/gratitudebutton"
+        app:layout_constraintTop_toBottomOf="@id/lottieAnimationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.663" />
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Gratitude Button -->
     <Button
         android:id="@+id/gratitudebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
         android:backgroundTint="#2196F3"
         android:text="@string/agradecer"
         android:textColor="#0B0B0B"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/thanksbutton"
+        app:layout_constraintTop_toBottomOf="@id/helpbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Thanks Button -->
     <Button
         android:id="@+id/thanksbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="176dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="#2196F3"
         android:text="@string/mis_agradecimientos"
         android:textColor="#050505"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gratitudebutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

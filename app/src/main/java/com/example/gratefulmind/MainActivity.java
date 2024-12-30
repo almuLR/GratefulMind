@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,29 +19,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        //HelpButton que cambie de pantalla no lo he implementado
 
-        //Implementamos el botón que nos lleve a escribir el agradecimiento
+        // Inicialización de la animación Lottie
+        LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimationView);
+        lottieAnimationView.setAnimation(R.raw.gratitude_animation);
+        lottieAnimationView.playAnimation();
+
+        // Implementación del botón que nos lleve a escribir el agradecimiento
         Button gratitudeButton = findViewById(R.id.gratitudebutton);
         gratitudeButton.setOnClickListener(v -> {
             Intent next = new Intent(MainActivity.this, GratitudeActivity.class);
             startActivity(next);
         });
 
-
-        //Implementamos el botón que nos lleve a ver todos nuestros agradecimientos
+        // Implementación del botón que nos lleve a ver todos nuestros agradecimientos
         Button thanksButton = findViewById(R.id.thanksbutton);
         thanksButton.setOnClickListener(v -> {
             Intent next = new Intent(MainActivity.this, ThanksActivity.class);
             startActivity(next);
         });
 
+        // Configuración para ajustar las vistas al sistema de bordes
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-
     }
 }
