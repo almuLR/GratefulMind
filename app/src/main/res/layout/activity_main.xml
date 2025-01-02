@@ -26,7 +26,6 @@
         app:titleTextColor="@color/black"
         tools:ignore="TextSizeCheck" />
 
-    <!-- Lottie Animation -->
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieAnimationView"
         android:layout_width="300dp"
@@ -39,7 +38,6 @@
         app:lottie_autoPlay="true"
         app:lottie_loop="true" />
 
-    <!-- Help Button -->
     <Button
         android:id="@+id/helpbutton"
         android:layout_width="wrap_content"
@@ -53,20 +51,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- Gratitude Button -->
     <Button
         android:id="@+id/gratitudebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
         android:backgroundTint="#2196F3"
         android:text="@string/agradecer"
         android:textColor="#0B0B0B"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/helpbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helpbutton" />
 
-    <!-- Thanks Button -->
     <Button
         android:id="@+id/thanksbutton"
         android:layout_width="wrap_content"
@@ -76,9 +73,10 @@
         android:text="@string/mis_agradecimientos"
         android:textColor="#050505"
         android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/gratitudebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/gratitudebutton"
+        app:layout_constraintVertical_bias="0.281" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

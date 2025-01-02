@@ -1,6 +1,7 @@
 package com.example.gratefulmind;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -19,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        MediaPlayer startSound = MediaPlayer.create(this, R.raw.app_start_sound);
+        startSound.start();
 
         // Inicialización de la animación Lottie
         LottieAnimationView lottieAnimationView = findViewById(R.id.lottieAnimationView);

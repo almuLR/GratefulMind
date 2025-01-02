@@ -1,6 +1,7 @@
 package com.example.gratefulmind;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -64,6 +65,8 @@ public class GratitudeActivity extends AppCompatActivity {
             // Guardar en la base de datos
             dbHelper.addGratitude(date, gratitude1, gratitude2, gratitude3, lesson, feeling, reason);
             Toast.makeText(GratitudeActivity.this, "¡Agradecimiento registrado exitosamente!", Toast.LENGTH_SHORT).show();
+            MediaPlayer saveSound = MediaPlayer.create(GratitudeActivity.this, R.raw.gratitude_saved);
+            saveSound.start();
 
             // Limpiar los campos
             dateField.setText("");
