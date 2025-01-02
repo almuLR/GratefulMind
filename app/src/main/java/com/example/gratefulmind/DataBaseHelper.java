@@ -55,4 +55,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         db.insert("thanks", null, values);
         db.close();
     }
+    public void deleteDatabase(Context context) {
+        context.deleteDatabase(DATABASE_NAME);
+    }
 }
