@@ -28,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
+        android:contentDescription="@string/todooo"
         android:src="@drawable/lista_agradecimientos_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -39,19 +40,21 @@
         android:layout_width="349dp"
         android:layout_height="81dp"
         android:layout_marginTop="16dp"
-        android:text="Al presionar el botón 'Lista de agradecimientos' se mostrará una lista con todos los agradecimientos guardados previamente."
+        android:text="@string/al_presionar_el_bot_n_lista_de_agradecimientos_se_mostrar_una_lista_con_todos_los_agradecimientos_guardados_previamente"
+        android:textColor="#263238"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:text="Volver"
+        android:text="@string/volver_"
         android:backgroundTint="#2196F3"
         android:textColor="#050505"
         app:layout_constraintEnd_toEndOf="parent"

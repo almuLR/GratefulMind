@@ -33,4 +33,10 @@
     <string name="lecci_n">Lección:</string>
     <string name="c_mo_te_sientes">Cómo te sientes:</string>
     <string name="por_qu">Por qué:</string>
+    <string name="volver_">Volver</string>
+    <string name="todooo">TODO</string>
+    <string name="al_presionar_el_bot_n_lista_de_agradecimientos_se_mostrar_una_lista_con_todos_los_agradecimientos_guardados_previamente">Al presionar el botón \'Lista de agradecimientos\' se mostrará una lista con todos los agradecimientos guardados previamente.</string>
+    <string name="o">TODO</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="en_la_pantalla_de_agradecer_puedes_a_adir_la_fecha_del_d_a_en_el_que_quieres_a_adir_los_agradecimientos_hay_distintos_campos_que_puedes_rellenar_como_3_cosas_con_las_que_te_has_sentido_agradecido_o_que_has_aprendido_ese_d_a_tienes_las_opciones_de_presionar_la_flecha_de_abajo_a_la_izquierda_para_volver_a_la_pantalla_principal_o_pulsar_a_la_cruz_blanca_sobre_circulo_azul_para_guardar_el_agradecimiento">En la pantalla de \'Agradecer\' puedes añadir la fecha del día en el que quieres añadir los agradecimientos. Hay distintos campos que puedes rellenar, como 3 cosas con las que te has sentido agradecido o que has aprendido ese día. Tienes las opciones de presionar la flecha de abajo a la izquierda para volver a la pantalla principal o pulsar a la cruz blanca sobre circulo azul para guardar el agradecimiento.</string>
 </resources>

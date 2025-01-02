@@ -28,6 +28,7 @@
         android:layout_width="230dp"
         android:layout_height="413dp"
         android:layout_marginTop="12dp"
+        android:contentDescription="@string/o"
         android:src="@drawable/agradecer_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,19 +39,21 @@
         android:layout_width="386dp"
         android:layout_height="157dp"
         android:layout_marginTop="16dp"
-        android:text="En la pantalla de 'Agradecer' puedes añadir la fecha del día en el que quieres añadir los agradecimientos. Hay distintos campos que puedes rellenar, como 3 cosas con las que te has sentido agradecido o que has aprendido ese día. Tienes las opciones de presionar la flecha de abajo a la izquierda para volver a la pantalla principal o pulsar a la cruz blanca sobre circulo azul para guardar el agradecimiento."
+        android:text="@string/en_la_pantalla_de_agradecer_puedes_a_adir_la_fecha_del_d_a_en_el_que_quieres_a_adir_los_agradecimientos_hay_distintos_campos_que_puedes_rellenar_como_3_cosas_con_las_que_te_has_sentido_agradecido_o_que_has_aprendido_ese_d_a_tienes_las_opciones_de_presionar_la_flecha_de_abajo_a_la_izquierda_para_volver_a_la_pantalla_principal_o_pulsar_a_la_cruz_blanca_sobre_circulo_azul_para_guardar_el_agradecimiento"
+        android:textColor="#263238"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Siguiente"
+        android:text="@string/siguiente"
         android:backgroundTint="#2196F3"
         android:textColor="#050505"
         app:layout_constraintEnd_toEndOf="parent"
