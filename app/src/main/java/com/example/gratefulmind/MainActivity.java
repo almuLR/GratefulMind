@@ -25,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
         lottieAnimationView.setAnimation(R.raw.gratitude_animation);
         lottieAnimationView.playAnimation();
 
+        // Implementación del botón que nos lleve a la pantalla de ayuda
+        Button helpButton = findViewById(R.id.helpbutton);
+        helpButton.setOnClickListener(v -> {
+            Intent next = new Intent(MainActivity.this, HelpActivity1.class);
+            startActivity(next);
+        });
+
         // Implementación del botón que nos lleve a escribir el agradecimiento
         Button gratitudeButton = findViewById(R.id.gratitudebutton);
         gratitudeButton.setOnClickListener(v -> {

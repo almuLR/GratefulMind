@@ -16,6 +16,12 @@
             android:name=".GratitudeDetailActivity"
             android:exported="false" />
         <activity
+            android:name=".HelpActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".HelpActivity2"
+            android:exported="false" />
+        <activity
             android:name=".ThanksActivity"
             android:exported="false" />
         <activity
